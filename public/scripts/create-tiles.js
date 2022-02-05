@@ -1,20 +1,31 @@
 const addTilesToBattleground = ($battleground, dim = 10) => {
-  for (let i = 0; i <= dim; i++) {
-    const attributes = {
-      class: 'tile index-tile',
-      text: i,
-    };
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  
+  $('<div>', {
+    class: 'tile index-tile zero-tile',
+    text: 0
+  }).appendTo($battleground);
 
-    if (i === 0) {
-      attributes.class += ' zero-tile';
-    }
-    
-    $('<div>', attributes).appendTo($battleground);
+  for (let i = 1; i <= dim; i++) {
+    $('<div>', {
+      class: 'tile index-tile',
+      text: i
+    }).appendTo($battleground);
   }
 
-  // for (let i = 0; i <= )
+  for (let i = 0; i < dim; i++) {
+    $('<div>', {
+      class: 'tile index-tile',
+      text: alphabet.charAt(i).toUpperCase()
+    }).appendTo($battleground);
 
-
+    for (let ii = 0; ii < dim; ii++) {
+      $('<div>', {
+        class: 'tile',
+        text: 0
+      }).appendTo($battleground);
+    }
+  }
 };
 
 

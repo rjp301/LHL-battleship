@@ -7,6 +7,7 @@ const tileLabel = (x, y) => {
 };
 
 const xyFromIndex = (index, dim = 10) => {
+  // array of 0-indexed xy coords from index number in grid
   return [index % (dim + 1), Math.floor(index / (dim + 1))];
 };
 
