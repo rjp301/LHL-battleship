@@ -1,0 +1,53 @@
+:root {
+  --tile-width: 40px;
+  --tile-font-size: calc(var(--tile-width)*0.5);
+}
+
+html {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.battleground {
+  height: calc(var(--tile-width) * 11);
+  width: calc(var(--tile-width) * 11);
+  margin: 5vw;
+
+  display: grid;
+  grid-template-columns: 
+    var(--tile-width) var(--tile-width) 
+    var(--tile-width) var(--tile-width) 
+    var(--tile-width) var(--tile-width) 
+    var(--tile-width) var(--tile-width) 
+    var(--tile-width) var(--tile-width) 
+    var(--tile-width);
+
+  font-size: var(--tile-font-size);
+  
+}
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: steelblue;
+  border: 1px solid silver;
+  color: rgba(255,255,255,.8);
+}
+
+.index-tile {
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+
+.zero-tile {
+  color: transparent;
+}

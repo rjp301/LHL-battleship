@@ -1,0 +1,27 @@
+{
+  "name": "battleship",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjp301/battleship.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rjp301/battleship/issues"
+  },
+  "homepage": "https://github.com/rjp301/battleship#readme",
+  "description": "",
+  "dependencies": {
+    "eslint-plugin-jquery": "^1.5.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.0"
+  }
+}
