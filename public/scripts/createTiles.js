@@ -20,10 +20,11 @@ const addTilesToBattleground = ($battleground, dim = 10) => {
     }).appendTo($battleground);
 
     for (let ii = 0; ii < dim; ii++) {
-      $('<div>', {
-        class: 'tile',
-        text: 0
-      }).appendTo($battleground);
+      $battleground.append(
+        $('<div>', { class: 'tile' }).append(
+          $('<span>', { class: 'hole' })
+        )
+      );
     }
   }
 };

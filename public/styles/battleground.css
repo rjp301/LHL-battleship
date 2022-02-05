@@ -1,0 +1,52 @@
+.battleground {
+  height: calc(var(--tile-width) * 11);
+  width: calc(var(--tile-width) * 11);
+  margin: 5vw;
+
+  display: grid;
+  grid-template-columns: 
+    var(--tile-width) var(--tile-width) 
+    var(--tile-width) var(--tile-width) 
+    var(--tile-width) var(--tile-width) 
+    var(--tile-width) var(--tile-width) 
+    var(--tile-width) var(--tile-width) 
+    var(--tile-width);
+
+  font-size: var(--tile-font-size);
+}
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--grid-bg-col);
+  border: 1px solid var(--grid-fg-col);
+  color: var(--grid-fg-col);
+}
+
+.tile:hover {
+  background-color: rgb(218, 42, 42);
+}
+
+.index-tile {
+  font-weight: bold;
+  background-color: transparent;
+  color: var(--grid-bg-col);
+  border: none;
+}
+
+.index-tile:hover {
+  background-color: transparent;
+}
+
+.zero-tile {
+  color: transparent;
+}
+
+.hole {
+  width: calc(var(--tile-width)/3);
+  height: calc(var(--tile-width)/3);
+  border: 1px solid var(--grid-fg-col);
+  border-radius: 50%;
+}
