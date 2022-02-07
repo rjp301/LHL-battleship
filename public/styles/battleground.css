@@ -1,17 +1,17 @@
 .battleground {
   height: calc(var(--tile-width) * 11);
   width: calc(var(--tile-width) * 11);
-  margin: 5vw;
-
+  margin: 0 calc(var(--tile-width) + 20px) 40px 20px;
+  
   display: grid;
   grid-template-columns: 
-    var(--tile-width) var(--tile-width) 
-    var(--tile-width) var(--tile-width) 
-    var(--tile-width) var(--tile-width) 
-    var(--tile-width) var(--tile-width) 
-    var(--tile-width) var(--tile-width) 
-    var(--tile-width);
-
+  var(--tile-width) var(--tile-width) 
+  var(--tile-width) var(--tile-width) 
+  var(--tile-width) var(--tile-width) 
+  var(--tile-width) var(--tile-width) 
+  var(--tile-width) var(--tile-width) 
+  var(--tile-width);
+  
   font-size: var(--tile-font-size);
 }
 
@@ -19,20 +19,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background-color: var(--grid-bg-col);
-  border: 1px solid var(--grid-fg-col);
   color: var(--grid-fg-col);
-}
-
-.tile:hover {
-  background-color: rgb(218, 42, 42);
 }
 
 .index-tile {
   font-weight: bold;
   background-color: transparent;
-  color: var(--grid-bg-col);
+  color: slategray;
   border: none;
 }
 
@@ -47,6 +40,6 @@
 .hole {
   width: calc(var(--tile-width)/3);
   height: calc(var(--tile-width)/3);
-  border: 1px solid var(--grid-fg-col);
+  border: 2px solid whitesmoke;
   border-radius: 50%;
 }

@@ -21,7 +21,7 @@ const addTilesToBattleground = ($battleground, dim = 10) => {
 
     for (let ii = 0; ii < dim; ii++) {
       $battleground.append(
-        $('<div>', { class: 'tile' }).append(
+        $('<div>', { class: 'tile bevel' }).append(
           $('<span>', { class: 'hole' })
         )
       );

@@ -1,19 +1,58 @@
 :root {
   --tile-width: 40px;
   --tile-font-size: calc(var(--tile-width)*0.5);
+}
 
-  --grid-bg-col: rgb(10, 64, 85);
-  --grid-fg-col: rgb(28, 158, 209);
+* {
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 html {
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background-color: rgb(197, 204, 211);
+}
+
+header {
+  color: whitesmoke;
+  background-color: slategray;
+}
+
+header * {
+  padding: 20px;
+  margin: 0;
 }
 
 main {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.bevel {
+  background: #c0c0c0;
+  border: 4px outset #ececec;
+  border-top-color: rgb(236, 236, 236);
+  border-top-style: outset;
+  border-top-width: 4px;
+  border-right-color: rgb(236, 236, 236);
+  border-right-style: outset;
+  border-right-width: 4px;
+  border-bottom-color: rgb(236, 236, 236);
+  border-bottom-style: outset;
+  border-bottom-width: 4px;
+  border-left-color: rgb(236, 236, 236);
+  border-left-style: outset;
+  border-left-width: 4px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}
+
+.board {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
